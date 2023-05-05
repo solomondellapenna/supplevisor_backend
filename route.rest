@@ -1,17 +1,26 @@
-GET http://localhost:3000/subscribers
+GET http://localhost:3000/supplements
 
 ###
 
-GET http://localhost:3000/subscribers/6450b70e11969b13f2f14c2a
+GET http://localhost:3000/supplements/64514f9c905832792b33348f
 
 ###
 
-POST http://localhost:3000/subscribers
+GET http://localhost:3000/supplements/tongkat%20ali
+
+###
+
+POST http://localhost:3000/supplements
 Content-Type: application/json
 
 {
-    "name": "Joe",
-    "subscribedToChannel": "Mychannel"
+    "name": "Tongkat Ali",
+    "healthBenefits": ["Boost Testosterone", "Increase Male Fertility", "Relieve Stress"],
+    "healthRisks": ["Liver Toxicity"],
+    "ideal_dosage_mg": 500,
+    "toxic_dosage_mg": 2000,
+    "ideal_time": "Morning",
+    "references": ["https://www.healthline.com/nutrition/tongkat-ali-longjack-review#side-effects-dosage", "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3767077/"]
 }
 
 ###
